@@ -1,30 +1,53 @@
 # vue-axios
 
-> A Vue.js project
+## 用法
 
-## Build Setup
+克隆仓库到本地
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```
+git clone https://github.com/heuuLZP/axios_demo.git
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+进入仓库根目录,安装依赖
+```
+npm install
+```
+
+启动项目
+```
+npm run dev
+```
+
+## 查看效果
+
+自行修改Hello.vue文件中第24行以下部分代码。
+
+- 正常请求
+  ```
+  http.get(api.right, params)
+  ```
+- 地址不存在
+  ```
+  http.get(api.error, params)
+  ```
+- 参数不正确
+  ```
+  http.get(api.backEnd, params)
+  ```
+
+## 项目结构
+
+```
+src
+├── App.vue
+├── assets
+│   └── logo.png
+├── components
+│   └── Hello.vue
+├── main.js
+├── router
+│   └── index.js
+└── utils         ## 工具
+    └── api.js    ## 封装api
+    └── http.js   ## 封装axios
+```
