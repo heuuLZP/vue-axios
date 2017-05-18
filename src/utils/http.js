@@ -45,6 +45,7 @@ export default {
   post (url, data) {
     return axios({
       method: 'post',
+      baseURL: 'https://cnodejs.org/api/v1',
       url,
       data: qs.stringify(data),
       timeout: 10000,
@@ -65,7 +66,8 @@ export default {
   get (url, params) {
     return axios({
       method: 'get',
-      url: url,
+      baseURL: 'https://cnodejs.org/api/v1',
+      url,
       params, // get 请求时带的参数
       timeout: 10000,
       headers: {

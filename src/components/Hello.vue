@@ -6,6 +6,7 @@
 
 <script>
 import http from '../utils/http'
+import api from '../utils/api'
 export default {
   name: 'hello',
   data () {
@@ -20,7 +21,7 @@ export default {
     fetchData: async function () {
       let params = {
       }
-      const res = await http.get('https://cnodejs.org/api/v1/topic/5433d5e4e737cbe96dcef312', params)
+      const res = await http.get(api.right, params)
       if (res.data.success) {
         alert('请求成功')
       }
