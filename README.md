@@ -20,7 +20,7 @@ npm run dev
 
 ## 查看效果
 
-自行修改Hello.vue文件中第24行以下部分代码。
+自行修改`src/components/Hello.vue`文件中第24行中的如下所示代码。
 
 - 正常请求
   ```
