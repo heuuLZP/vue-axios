@@ -5,7 +5,7 @@
 克隆仓库到本地
 
 ```
-git clone https://github.com/heuuLZP/axios_demo.git
+git clone https://github.com/heuuLZP/vue-axios.git
 ```
 
 进入仓库根目录,安装依赖
